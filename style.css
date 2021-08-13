@@ -1,6 +1,6 @@
 body {
-  background: linear-gradient(45deg, #c974fa, #f8cc3d);
-  margin: auto;
+    background: linear-gradient(45deg, #c974fa, #f8cc3d);
+    margin: auto;
 }
 #btn_modal_window {
     position: relative;
@@ -32,6 +32,8 @@ body {
     overflow: auto;
     background-color: rgba(0,0,0,0.6);
     z-index: 1000;
+    animation-duration: 0.3s;
+    animation-name: showPopup;
 }
 .modal .modal_content {
     background-color: #fefefe;
@@ -52,4 +54,13 @@ body {
 }
 .modal .modal_content .close_modal_window:hover {
     color: #ff0000;
+}
+@keyframes showPopup {
+    from {
+      opacity: 0
+    }
+  
+    to {
+      opacity: 1
+    }
 }
